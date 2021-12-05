@@ -5,8 +5,170 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Weather App</title>
+        <link href="./style.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
     </head>
     <body>
-        Hi! I am a Weather App.
+        <div class="main_container">
+            <div class="container">
+                <!-- Navigation -->
+                <div class="nav">
+                    <div class="tools">
+                        <div class="tool_account_button">
+                            <i class="fas fa-wind icon-medium"></i>
+                        </div>
+                        <div class="tool_account_button">
+                            <i class="fas fa-folder-open icon-medium"></i>
+                        </div>
+                        <div class="tool_account_button current_button">
+                            <i class="fas fa-cloud icon-medium"></i>
+                        </div>
+                        <div class="tool_account_button">
+                            <i class="fas fa-archive"></i>
+                        </div>
+                    </div>
+                    <div class="account">
+                        <div
+                            class="
+                                tool_account_button
+                                notification_error_button
+                            "
+                        >
+                            <i class="fas fa-bell icon-medium"></i>
+                        </div>
+                        <div class="tool_account_button">
+                            <img
+                                class="user_icon"
+                                src="https://picsum.photos/200/300?random=1"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Area -->
+                <div class="main-area">
+                    <div id="main-area_row1">
+                        <label
+                            ><i class="fas fa-search icon-medium"></i>
+                            <input
+                                type="text"
+                                name="search"
+                                id="search_bar"
+                                placeholder="Search..."
+                        /></label>
+                    </div>
+                    <div class="title_setting" id="main-area_row2">
+                        <div class="title">
+                            <div class="title1">Weather</div>
+                            <div class="title2">Forecast</div>
+                        </div>
+                        <div class="setting_button">
+                            <i class="fas fa-cog icon-large"></i>
+                        </div>
+                    </div>
+                    <div class="main-area_charts" id="main-area_row3">
+                        <div class="chart_large"></div>
+                        <div class="chart_small"></div>
+                        <div class="chart_small"></div>
+                        <div class="chart_large"></div>
+                        <div class="chart_small"></div>
+                        <div class="chart_small"></div>
+                    </div>
+                </div>
+                <!-- Side Area -->
+                <div class="side_area">
+                    <div class="side_container">
+                        <div class="quote_area">
+                            <div class="side-area_icon-container">
+                                <i class="fas fa-sun icon-large"> </i>
+                            </div>
+                            <div class="heading-s margin-sm">
+                                It's hot today!
+                            </div>
+                            <div class="heading-xs color-sv margin-sm">
+                                Be sure to grab a bottle of cold water
+                            </div>
+                        </div>
+                        <div class="info_area side-area_info_icons-layout">
+                            <div
+                                class="
+                                    side-area_heading-span
+                                    heading-xs
+                                    color-sv
+                                "
+                            >
+                                INFO
+                            </div>
+                            <div class="side-area_icon-container">
+                                <i class="fas fa-wind icon-medium"></i>
+                            </div>
+                            <div class="side-area_icon-container">
+                                <i class="fas fa-tint icon-medium"></i>
+                            </div>
+                            <div class="side-area_icon-container">
+                                <i
+                                    class="fas fa-thermometer-half icon-medium"
+                                ></i>
+                            </div>
+                            <div
+                                class="
+                                    side-area_icon-container
+                                    dashed-border
+                                    no-background
+                                "
+                            >
+                                <i class="fas fa-plus icon-medium"></i>
+                            </div>
+                        </div>
+                        <div class="info_area side-area_city_icons-layout">
+                            <div class="heading-xs color-sv">CITY</div>
+                            <div class="flex-row side-area_city-box">
+                                <div class="side-area_icon-container">
+                                    <i
+                                        class="
+                                            fas
+                                            fa-cloud-showers-heavy
+                                            icon-medium
+                                        "
+                                    ></i>
+                                </div>
+                                <div class="city_details">
+                                    <div class="city_name">Paris</div>
+                                    <div class="city_temp color-sv">17°C</div>
+                                </div>
+                            </div>
+                            <div class="flex-row side-area_city-box">
+                                <div class="side-area_icon-container">
+                                    <i class="fas fa-umbrella icon-medium"></i>
+                                </div>
+                                <div class="city_details">
+                                    <div class="city_name">London</div>
+                                    <div class="city_temp color-sv">18°C</div>
+                                </div>
+                            </div>
+                            <div
+                                class="
+                                    side-area_icon-container
+                                    dashed-border
+                                    no-background
+                                "
+                            >
+                                <i class="fas fa-plus icon-medium"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script
+            src="https://kit.fontawesome.com/c59d0bc2de.js"
+            crossorigin="anonymous"
+        ></script>
     </body>
 </html>
