@@ -51,7 +51,6 @@
 
 .container {
     width: 99%;
-    height: 52rem; /*temporary*/
     background-color: var(--surface);
     padding: 0.5rem 0.5rem;
     display: grid;
@@ -133,15 +132,18 @@
     margin-left: 5px;
     width: 90%;
     height: 2rem;
+    border-radius: 0;
     background: transparent;
     color: var(--on-primary-varient);
     border: none;
     font-size: 1.5rem;
+    border-bottom: 0px;
 }
 
 #search_bar:focus {
-    border: none;
+    border-bottom: 2px solid var(--on-primary-varient);
     outline: none;
+    transition: 2s ease-in;
 }
 
 #search_bar::placeholder {
@@ -180,15 +182,13 @@
     background-color: var(--secondary);
     color: var(--on-secondary);
     padding: 2rem;
-    max-height: 95vh;
 }
 
 .side_container {
     max-width: 250px;
-    height: 100%;
 
     display: grid;
-    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-rows: auto;
     row-gap: 3.5rem;
 }
 
@@ -198,8 +198,9 @@
 .side-area_info_icons-layout {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 2rem auto;
+    grid-template-rows: 1.6rem auto;
     column-gap: 1rem;
+    row-gap: 1rem;
 }
 
 .info_area {
@@ -223,7 +224,7 @@
 
 .side-area_city_icons-layout {
     display: grid;
-    grid-template-rows: 1.5rem auto;
+    grid-template-rows: 1.6rem auto;
     row-gap: 1rem;
 }
 
