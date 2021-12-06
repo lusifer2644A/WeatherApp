@@ -173,6 +173,11 @@
 .chart_large {
     background-color: var(--primary-varient);
 }
+
+.chart_image--temp {
+    height: 15rem;
+}
+
 .chart_small {
     background-color: var(--primary-varient);
     height: 60%;
