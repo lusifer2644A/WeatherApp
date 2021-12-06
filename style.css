@@ -89,6 +89,12 @@
     color: var(--on-background);
 }
 
+.tool_account_button:hover,
+.setting_button:hover,
+.notification_error_button:hover {
+    opacity: 90%;
+}
+
 .notification_error_button {
     background-color: var(--notification_error);
     color: var(--on-notification_error);
