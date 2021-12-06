@@ -13,6 +13,10 @@
             rel="stylesheet"
         />
         <link
+            href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600&family=Roboto:wght@100;300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
             rel="icon"
             type="image/x-icon"
             href="https://www.transparentpng.com/thumb/weather-report/iphone-weather-icon-png-30.png"
@@ -25,7 +29,7 @@
                 <div class="nav">
                     <div class="tools">
                         <div class="tool_account_button">
-                            <i class="fas fa-wind icon-medium"></i>
+                            <i class="fas fa-stream icon-medium"></i>
                         </div>
                         <div class="tool_account_button">
                             <i class="fas fa-folder-open icon-medium"></i>
@@ -60,12 +64,14 @@
                     <div id="main-area_row1">
                         <label
                             ><i class="fas fa-search icon-medium"></i>
-                            <input
-                                type="text"
-                                name="search"
-                                id="search_bar"
-                                placeholder="Search..."
-                        /></label>
+                            <div class="search_bar_container">
+                                <input
+                                    type="text"
+                                    name="search"
+                                    class="search_bar"
+                                    placeholder="Search..."
+                                /></div
+                        ></label>
                     </div>
                     <div class="title_setting" id="main-area_row2">
                         <div class="title">
@@ -77,24 +83,66 @@
                         </div>
                     </div>
                     <div class="main-area_charts" id="main-area_row3">
-                        <div class="chart_large">
+                        <div class="flex-row center chart_large">
                             <img
                                 src="/images/graph.png"
-                                class="chart_image--temp"
+                                class="chart_image--large--temp"
                                 alt=""
                             />
                         </div>
-                        <div class="chart_small"></div>
-                        <div class="chart_small"></div>
-                        <div class="chart_large">
+                        <div class="flex-col chart_small">
+                            <img
+                                src="/images/waveform.png"
+                                class="self-center chart_image--small--temp"
+                                alt=""
+                            />
+
+                            <div class="heading-s">3-month</div>
+                            <div class="heading-xs opacity-50">
+                                Precipitation
+                            </div>
+                        </div>
+                        <div class="flex-col chart_small">
+                            <img
+                                src="/images/waveform.png"
+                                class="self-center chart_image--small--temp"
+                                alt=""
+                            />
+                            <div class="heading-s">6-month</div>
+                            <div class="heading-xs opacity-50">
+                                Precipitation
+                            </div>
+                        </div>
+                        <div class="flex-row center chart_large">
                             <img
                                 src="/images/graph.png"
-                                class="chart_image--temp"
+                                class="chart_image--large--temp"
                                 alt=""
                             />
                         </div>
-                        <div class="chart_small"></div>
-                        <div class="chart_small"></div>
+                        <div class="flex-col chart_small">
+                            <img
+                                src="/images/waveform.png"
+                                class="self-center chart_image--small--temp"
+                                alt=""
+                            />
+
+                            <div class="heading-s">3-month</div>
+                            <div class="heading-xs opacity-50">
+                                Precipitation
+                            </div>
+                        </div>
+                        <div class="flex-col chart_small">
+                            <img
+                                src="/images/waveform.png"
+                                class="self-center chart_image--small--temp"
+                                alt=""
+                            />
+                            <div class="heading-s">6-month</div>
+                            <div class="heading-xs opacity-50">
+                                Precipitation
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Side Area -->
