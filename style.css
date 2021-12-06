@@ -41,8 +41,8 @@
 }
 
 .main_container {
-    max-height: 100vh;
-    padding: 0.5rem 0.5rem;
+    min-height: 100vh;
+    padding: 0.8rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,10 +53,10 @@
 .container {
     width: 99%;
     background-color: var(--surface);
-    padding: 0.5rem 0.5rem;
+    padding: 0.8rem 0.8rem;
     display: grid;
     grid-template-columns: 1fr 15fr 5fr;
-    column-gap: 0.5rem;
+    column-gap: 0.8rem;
 }
 
 .nav {
@@ -90,9 +90,10 @@
 
 .main-area {
     background-color: var(--primary);
+    height: 100%;
     padding: 2rem;
     display: grid;
-    grid-template-rows: 1.2fr 1.2fr 12fr;
+    grid-template-rows: 1fr 1fr 12fr;
     row-gap: 1rem;
     column-gap: 1rem;
 }
@@ -200,7 +201,7 @@
 
 .chart_image--large--temp {
     filter: saturate(0.1) opacity(10);
-    height: 16rem;
+    height: 10rem;
 }
 
 .chart_image--small--temp {
@@ -255,8 +256,8 @@
 
 .side-area_city_icons-layout {
     display: grid;
-    grid-template-rows: 1.6rem auto;
-    row-gap: 1rem;
+    grid-template-rows: 1.4rem auto;
+    row-gap: 0.8rem;
 }
 
 .side-area_city-box {
