@@ -251,18 +251,12 @@
     row-gap: 3.5rem;
 }
 
-.quote_area {
-}
-
 .side-area_info_icons-layout {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1.6rem auto;
     column-gap: var(--grid-gap--s);
     row-gap: var(--grid-gap--s) !important;
-}
-
-.info_area {
 }
 
 .side-area_heading-span {
@@ -285,9 +279,6 @@
     display: grid;
     grid-template-rows: 1.4rem auto;
     row-gap: var(--grid-gap--s);
-}
-
-.side-area_city-box {
 }
 
 .city_details {
@@ -399,13 +390,6 @@
     }
     .chart_small {
         width: auto;
-    }
-    .chart_image--large--temp {
-        /* height: 6em; */
-    }
-    .chart_image--small--temp {
-        /* height: 3em;
-        width: 3em; */
     }
 
     .side_container {
