@@ -26,204 +26,218 @@
         <div class="main_container">
             <div class="container">
                 <!-- Navigation -->
-                <div class="nav">
-                    <div class="tools">
-                        <div class="tool_account_button">
-                            <i class="fas fa-stream icon-medium"></i>
+                <div class="nav__wrapper">
+                    <div class="nav">
+                        <div class="tools">
+                            <div class="tool_account_button">
+                                <i class="fas fa-stream icon-medium"></i>
+                            </div>
+                            <div class="tool_account_button">
+                                <i class="fas fa-folder-open icon-medium"></i>
+                            </div>
+                            <div class="tool_account_button current_button">
+                                <i class="fas fa-cloud icon-medium"></i>
+                            </div>
+                            <div class="tool_account_button">
+                                <i class="fas fa-archive icon-medium"></i>
+                            </div>
                         </div>
-                        <div class="tool_account_button">
-                            <i class="fas fa-folder-open icon-medium"></i>
-                        </div>
-                        <div class="tool_account_button current_button">
-                            <i class="fas fa-cloud icon-medium"></i>
-                        </div>
-                        <div class="tool_account_button">
-                            <i class="fas fa-archive"></i>
-                        </div>
-                    </div>
-                    <div class="account">
-                        <div
-                            class="
-                                tool_account_button
-                                notification_error_button
-                            "
-                        >
-                            <i class="fas fa-bell icon-medium"></i>
-                        </div>
-                        <div class="tool_account_button">
-                            <img
-                                class="user_icon"
-                                src="https://picsum.photos/200/300?random=1"
-                            />
+                        <div class="account">
+                            <div
+                                class="
+                                    tool_account_button
+                                    notification_error_button
+                                "
+                            >
+                                <i class="fas fa-bell icon-medium"></i>
+                            </div>
+                            <div class="tool_account_button">
+                                <img
+                                    class="user_icon"
+                                    src="https://picsum.photos/200/300?random=1"
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Main Area -->
-                <div class="main-area">
-                    <div id="main-area_row1">
-                        <label
-                            ><i class="fas fa-search icon-medium"></i>
-                            <div class="search_bar_container">
-                                <input
-                                    type="text"
-                                    name="search"
-                                    class="search_bar"
-                                    placeholder="Search..."
-                                /></div
-                        ></label>
-                    </div>
-                    <div class="title_setting" id="main-area_row2">
-                        <div class="title">
-                            <div class="title1">Weather</div>
-                            <div class="title2">Forecast</div>
+                <div class="grid__container">
+                    <div class="main-area">
+                        <div id="main-area_row1">
+                            <label
+                                ><i class="fas fa-search icon-medium"></i>
+                                <div class="search_bar_container">
+                                    <input
+                                        type="text"
+                                        name="search"
+                                        class="search_bar"
+                                        placeholder="Search..."
+                                    /></div
+                            ></label>
                         </div>
-                        <div class="setting_button">
-                            <i class="fas fa-cog icon-large"></i>
+                        <div class="title_setting" id="main-area_row2">
+                            <div class="title">
+                                <div class="title1">Weather</div>
+                                <div class="title2">Forecast</div>
+                            </div>
+                            <div class="setting_button">
+                                <i class="fas fa-cog icon-large"></i>
+                            </div>
                         </div>
-                    </div>
-                    <div class="main-area_charts" id="main-area_row3">
-                        <div class="flex-row center chart_large">
-                            <img
-                                src="./images/graph.png"
-                                class="chart_image--large--temp"
-                                alt=""
-                            />
-                        </div>
-                        <div class="flex-col chart_small">
-                            <img
-                                src="./images/waveform.png"
-                                class="self-center chart_image--small--temp"
-                                alt=""
-                            />
+                        <div class="main-area_charts" id="main-area_row3">
+                            <div class="flex-row center chart_large">
+                                <img
+                                    src="./images/graph.png"
+                                    class="chart_image--large--temp"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="flex-col chart_small">
+                                <img
+                                    src="./images/waveform.png"
+                                    class="self-center chart_image--small--temp"
+                                    alt=""
+                                />
 
-                            <div class="heading-s">3-month</div>
-                            <div class="heading-xs opacity-50">
-                                Precipitation
+                                <div class="heading-s">3-month</div>
+                                <div class="heading-xs opacity-50">
+                                    Precipitation
+                                </div>
                             </div>
-                        </div>
-                        <div class="flex-col chart_small">
-                            <img
-                                src="./images/waveform.png"
-                                class="self-center chart_image--small--temp"
-                                alt=""
-                            />
-                            <div class="heading-s">6-month</div>
-                            <div class="heading-xs opacity-50">
-                                Precipitation
+                            <div class="flex-col chart_small">
+                                <img
+                                    src="./images/waveform.png"
+                                    class="self-center chart_image--small--temp"
+                                    alt=""
+                                />
+                                <div class="heading-s">6-month</div>
+                                <div class="heading-xs opacity-50">
+                                    Precipitation
+                                </div>
                             </div>
-                        </div>
-                        <div class="flex-row center chart_large">
-                            <img
-                                src="./images/graph.png"
-                                class="chart_image--large--temp"
-                                alt=""
-                            />
-                        </div>
-                        <div class="flex-col chart_small">
-                            <img
-                                src="./images/waveform.png"
-                                class="self-center chart_image--small--temp"
-                                alt=""
-                            />
+                            <div class="flex-row center chart_large">
+                                <img
+                                    src="./images/graph.png"
+                                    class="chart_image--large--temp"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="flex-col chart_small">
+                                <img
+                                    src="./images/waveform.png"
+                                    class="self-center chart_image--small--temp"
+                                    alt=""
+                                />
 
-                            <div class="heading-s">3-month</div>
-                            <div class="heading-xs opacity-50">
-                                Precipitation
+                                <div class="heading-s">3-month</div>
+                                <div class="heading-xs opacity-50">
+                                    Precipitation
+                                </div>
                             </div>
-                        </div>
-                        <div class="flex-col chart_small">
-                            <img
-                                src="./images/waveform.png"
-                                class="self-center chart_image--small--temp"
-                                alt=""
-                            />
-                            <div class="heading-s">6-month</div>
-                            <div class="heading-xs opacity-50">
-                                Precipitation
+                            <div class="flex-col chart_small">
+                                <img
+                                    src="./images/waveform.png"
+                                    class="self-center chart_image--small--temp"
+                                    alt=""
+                                />
+                                <div class="heading-s">6-month</div>
+                                <div class="heading-xs opacity-50">
+                                    Precipitation
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- Side Area -->
-                <div class="side_area">
-                    <div class="side_container">
-                        <div class="quote_area">
-                            <div class="side-area_icon-container">
-                                <i class="fas fa-sun icon-large"> </i>
+                    <!-- Side Area -->
+                    <div class="side_area">
+                        <div class="side_container">
+                            <div class="quote_area">
+                                <div class="side-area_icon-container">
+                                    <i class="fas fa-sun icon-large"> </i>
+                                </div>
+                                <div class="heading-s margin-sm">
+                                    It's hot today!
+                                </div>
+                                <div class="heading-xs color-sv margin-sm">
+                                    Be sure to grab a bottle of cold water
+                                </div>
                             </div>
-                            <div class="heading-s margin-sm">
-                                It's hot today!
-                            </div>
-                            <div class="heading-xs color-sv margin-sm">
-                                Be sure to grab a bottle of cold water
-                            </div>
-                        </div>
-                        <div class="info_area side-area_info_icons-layout">
-                            <div
-                                class="
-                                    side-area_heading-span
-                                    heading-xs
-                                    color-sv
-                                "
-                            >
-                                INFO
-                            </div>
-                            <div class="side-area_icon-container">
-                                <i class="fas fa-wind icon-medium"></i>
-                            </div>
-                            <div class="side-area_icon-container">
-                                <i class="fas fa-tint icon-medium"></i>
-                            </div>
-                            <div class="side-area_icon-container">
-                                <i
-                                    class="fas fa-thermometer-half icon-medium"
-                                ></i>
-                            </div>
-                            <div
-                                class="
-                                    side-area_icon-container
-                                    dashed-border
-                                    no-background
-                                "
-                            >
-                                <i class="fas fa-plus icon-medium"></i>
-                            </div>
-                        </div>
-                        <div class="info_area side-area_city_icons-layout">
-                            <div class="heading-xs color-sv">CITY</div>
-                            <div class="flex-row side-area_city-box">
+                            <div class="info_area side-area_info_icons-layout">
+                                <div
+                                    class="
+                                        side-area_heading-span
+                                        heading-xs
+                                        color-sv
+                                    "
+                                >
+                                    INFO
+                                </div>
+                                <div class="side-area_icon-container">
+                                    <i class="fas fa-wind icon-medium"></i>
+                                </div>
+                                <div class="side-area_icon-container">
+                                    <i class="fas fa-tint icon-medium"></i>
+                                </div>
                                 <div class="side-area_icon-container">
                                     <i
                                         class="
                                             fas
-                                            fa-cloud-showers-heavy
+                                            fa-thermometer-half
                                             icon-medium
                                         "
                                     ></i>
                                 </div>
-                                <div class="city_details">
-                                    <div class="city_name">Paris</div>
-                                    <div class="city_temp color-sv">17°C</div>
+                                <div
+                                    class="
+                                        side-area_icon-container
+                                        dashed-border
+                                        no-background
+                                    "
+                                >
+                                    <i class="fas fa-plus icon-medium"></i>
                                 </div>
                             </div>
-                            <div class="flex-row side-area_city-box">
-                                <div class="side-area_icon-container">
-                                    <i class="fas fa-umbrella icon-medium"></i>
+                            <div class="info_area side-area_city_icons-layout">
+                                <div class="heading-xs color-sv">CITY</div>
+                                <div class="flex-row side-area_city-box">
+                                    <div class="side-area_icon-container">
+                                        <i
+                                            class="
+                                                fas
+                                                fa-cloud-showers-heavy
+                                                icon-medium
+                                            "
+                                        ></i>
+                                    </div>
+                                    <div class="city_details">
+                                        <div class="city_name">Paris</div>
+                                        <div class="city_temp color-sv">
+                                            17°C
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="city_details">
-                                    <div class="city_name">London</div>
-                                    <div class="city_temp color-sv">18°C</div>
+                                <div class="flex-row side-area_city-box">
+                                    <div class="side-area_icon-container">
+                                        <i
+                                            class="fas fa-umbrella icon-medium"
+                                        ></i>
+                                    </div>
+                                    <div class="city_details">
+                                        <div class="city_name">London</div>
+                                        <div class="city_temp color-sv">
+                                            18°C
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div
-                                class="
-                                    side-area_icon-container
-                                    dashed-border
-                                    no-background
-                                "
-                            >
-                                <i class="fas fa-plus icon-medium"></i>
+                                <div
+                                    class="
+                                        side-area_icon-container
+                                        dashed-border
+                                        no-background
+                                    "
+                                >
+                                    <i class="fas fa-plus icon-medium"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -235,5 +249,7 @@
             src="https://kit.fontawesome.com/c59d0bc2de.js"
             crossorigin="anonymous"
         ></script>
+
+        <script src="./js/screenResize.js"></script>
     </body>
 </html>
