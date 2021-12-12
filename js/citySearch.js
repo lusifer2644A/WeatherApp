@@ -1,6 +1,9 @@
 function loadData(city) {
     $.ajax({
         url: `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=9f7163bce678c3e803c9529c47b925b2`,
+        error: function (request, status, error) {
+            alert("Please enter a valid city!");
+        },
     }).done(function (data) {
         $("#city_name").text(data.name);
 
