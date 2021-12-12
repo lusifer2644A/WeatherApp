@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Weather App</title>
-        <link href="./style.css" rel="stylesheet" />
+        <link href="./css/master.css" rel="stylesheet" type="text/css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -21,6 +21,8 @@
             type="image/x-icon"
             href="https://www.transparentpng.com/thumb/weather-report/iphone-weather-icon-png-30.png"
         />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
         <div class="main_container">
@@ -66,20 +68,32 @@
                     <div class="main-area">
                         <div id="main-area_row1">
                             <label
-                                ><i class="fas fa-search icon-medium"></i>
+                                ><i
+                                    id="search_button"
+                                    class="fas fa-search icon-medium"
+                                ></i>
                                 <div class="search_bar_container">
                                     <input
                                         type="text"
                                         name="search"
                                         class="search_bar"
+                                        id="search"
                                         placeholder="Search..."
                                     /></div
                             ></label>
                         </div>
                         <div class="title_setting" id="main-area_row2">
                             <div class="title">
-                                <div class="title1">Weather</div>
-                                <div class="title2">Forecast</div>
+                                <div class="app_title">
+                                    <div class="title1">Weather</div>
+                                    <div class="title2">Forecast</div>
+                                </div>
+                                <div class="city">
+                                    <i
+                                        class="fas fa-map-marker-alt margin-sm"
+                                    ></i>
+                                    <div id="city_name"></div>
+                                </div>
                             </div>
                             <div class="setting_button">
                                 <i class="fas fa-cog icon-large"></i>
@@ -93,7 +107,10 @@
                                     alt=""
                                 />
                             </div>
-                            <div class="flex-col chart_small">
+                            <div
+                                class="flex-col chart_small"
+                                id="main_area_temp"
+                            >
                                 <img
                                     src="./images/waveform.png"
                                     class="self-center chart_image--small--temp"
@@ -102,7 +119,7 @@
 
                                 <div class="heading-s">3-month</div>
                                 <div class="heading-xs opacity-50">
-                                    Precipitation
+                                    Temperature
                                 </div>
                             </div>
                             <div class="flex-col chart_small">
@@ -113,7 +130,7 @@
                                 />
                                 <div class="heading-s">6-month</div>
                                 <div class="heading-xs opacity-50">
-                                    Precipitation
+                                    Temperature
                                 </div>
                             </div>
                             <div class="flex-row center chart_large">
@@ -153,12 +170,22 @@
                         <div class="side_container">
                             <div class="quote_area">
                                 <div class="side-area_icon-container">
-                                    <i class="fas fa-sun icon-large"> </i>
+                                    <i
+                                        class="wi wi-night icon-large"
+                                        id="weather_icon"
+                                    ></i>
                                 </div>
-                                <div class="heading-s margin-sm">
+
+                                <div
+                                    class="heading-s margin-sm"
+                                    id="weather_desc"
+                                >
                                     It's hot today!
                                 </div>
-                                <div class="heading-xs color-sv margin-sm">
+                                <div
+                                    class="heading-xs color-sv margin-sm"
+                                    id="weather_msg"
+                                >
                                     Be sure to grab a bottle of cold water
                                 </div>
                             </div>
@@ -251,5 +278,6 @@
         ></script>
 
         <script src="./js/screenResize.js"></script>
+        <script src="./js/citySearch.js"></script>
     </body>
 </html>

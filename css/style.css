@@ -211,6 +211,13 @@
     font-weight: 300;
 }
 
+.city,
+.app_title {
+    display: flex;
+    flex-direction: row;
+    margin-left: var(--grid-gap--s);
+    gap: var(--grid-gap--xs);
+}
 .setting_button {
     color: var(--on-primary);
 }
@@ -400,6 +407,11 @@
 
     .quote_area {
         grid-column: 1 / 3;
+    }
+
+    .title {
+        display: flex;
+        flex-direction: column;
     }
 }
 
